@@ -1,0 +1,121 @@
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #dee2e6;
+  width: 60%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #495057;
+  height: 50px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header > div.test {
+  font-size: 25px;
+  font-weight: bold;
+  /* float: left; */
+  padding: 10px 40px;
+}
+
+.body {
+  background: #dee2e6;
+  height: 300px;
+  padding: 20px;
+}
+
+.footer {
+  background: #adb5bd;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.header > div.header-right {
+  /* float: right; */
+  font-size: 18px;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+.button {
+  background-color: MediumSeaGreen;
+  border: none;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.answer_true {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.answer_false {
+  color: red;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: line-through;
+}
+
+.endBtn {
+  background-color: MediumSeaGreen;
+  border: none;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1034px) {
+  .header {
+    background: #495057;
+    height: 50px;
+    width: 100%;
+    color: white;
+  }
+
+  .header > div.test {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .header > div.test {
+    font-size: 15px;
+    padding: 15px 10px;
+  }
+
+  .header > div.header-right {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}

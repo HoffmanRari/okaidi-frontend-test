@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Quizz</title>
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <body>
+    <div class="content">
+      <div class="header">
+        <div class="test">Test Javascript <span id="stat">-/-</span></div>
+        <div id="timePassed" class="header-right">
+          Time elapsed: <span id="time"></span>
+        </div>
+      </div>
+      <div class="body" id="body"></div>
+      <div class="footer">
+        <button id="next" class="button" onclick="onNext()">Next</button>
+        <button id="validate" class="button" onclick="onValidate()">
+          Validate
+        </button>
+        <button id="end" class="endBtn" onclick="onEnd()">End</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
